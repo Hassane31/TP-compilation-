@@ -438,9 +438,10 @@ int yy_flex_debug = 0;
 char *yytext;
 #line 1 "calcuLines.l"
 #line 2 "calcuLines.l"
+#include <stdio.h>
 int nbr_line = 0 ;
-#line 443 "lex.yy.c"
 #line 444 "lex.yy.c"
+#line 445 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -657,9 +658,9 @@ YY_DECL
 		}
 
 	{
-#line 4 "calcuLines.l"
+#line 6 "calcuLines.l"
 
-#line 663 "lex.yy.c"
+#line 664 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -719,20 +720,20 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 5 "calcuLines.l"
-nbr_line ++;
+#line 7 "calcuLines.l"
+{nbr_line++;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 6 "calcuLines.l"
-{ };
+#line 8 "calcuLines.l"
+;
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 7 "calcuLines.l"
+#line 9 "calcuLines.l"
 ECHO;
 	YY_BREAK
-#line 736 "lex.yy.c"
+#line 737 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1737,14 +1738,13 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 7 "calcuLines.l"
-
+#line 9 "calcuLines.l"
 
 int main(){
     yylex();
-    printf("le nombre de line est : %d",nbr_line);
+printf("le nombre de line est : %d",nbr_line);
     return 0 ;
 }
-int yywrap(){
+int yywrap(void){
     return 1;
 }

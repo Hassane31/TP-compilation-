@@ -351,8 +351,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 2
-#define YY_END_OF_BUFFER 3
+#define YY_NUM_RULES 3
+#define YY_END_OF_BUFFER 4
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -362,7 +362,7 @@ struct yy_trans_info
 	};
 static const flex_int16_t yy_accept[8] =
     {   0,
-        0,    0,    3,    2,    1,    1,    0
+        0,    0,    4,    3,    1,    2,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -371,16 +371,16 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    2,    3,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    2,    1,    1,    1,
 
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    3,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -404,22 +404,22 @@ static const YY_CHAR yy_meta[4] =
 
 static const flex_int16_t yy_base[8] =
     {   0,
-        0,    0,    6,    7,    2,    0,    7
+        0,    0,    4,    5,    5,    5,    5
     } ;
 
 static const flex_int16_t yy_def[8] =
     {   0,
-        7,    1,    7,    7,    7,    5,    0
+        7,    1,    7,    7,    7,    7,    0
     } ;
 
-static const flex_int16_t yy_nxt[11] =
+static const flex_int16_t yy_nxt[9] =
     {   0,
-        4,    5,    5,    6,    6,    7,    3,    7,    7,    7
+        4,    5,    6,    7,    3,    7,    7,    7
     } ;
 
-static const flex_int16_t yy_chk[11] =
+static const flex_int16_t yy_chk[9] =
     {   0,
-        1,    1,    1,    5,    5,    3,    7,    7,    7,    7
+        1,    1,    1,    3,    7,    7,    7,    7
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -436,10 +436,11 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "binaire.l"
-#line 2 "binaire.l"
-#line 442 "lex.yy.c"
+#line 1 "inverserAZ.l"
+#line 2 "inverserAZ.l"
+
 #line 443 "lex.yy.c"
+#line 444 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -656,9 +657,9 @@ YY_DECL
 		}
 
 	{
-#line 4 "binaire.l"
+#line 6 "inverserAZ.l"
 
-#line 662 "lex.yy.c"
+#line 663 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -691,7 +692,7 @@ yy_match:
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 7 );
+		while ( yy_base[yy_current_state] != 5 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -717,15 +718,20 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 5 "binaire.l"
-printf("cest un nombre binaire " );
+#line 7 "inverserAZ.l"
+printf("z");
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 6 "binaire.l"
+#line 8 "inverserAZ.l"
+printf("a");
+	YY_BREAK
+case 3:
+YY_RULE_SETUP
+#line 9 "inverserAZ.l"
 ECHO;
 	YY_BREAK
-#line 729 "lex.yy.c"
+#line 735 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1730,12 +1736,12 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 6 "binaire.l"
+#line 9 "inverserAZ.l"
 
-int main (){ 
-yylex();
-return 0 ; 
+int main(){
+    yylex();
 }
-int yywrap(){ 
+int yywrap(){
     return 1;
-} 
+}
+

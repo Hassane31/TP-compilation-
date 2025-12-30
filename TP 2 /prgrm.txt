@@ -1,4 +1,4 @@
-programe main 
+Programe main 
 var x,y ; real ;
 a, b : intger ;
 begin 

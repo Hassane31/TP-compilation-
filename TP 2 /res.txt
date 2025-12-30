@@ -1,4 +1,5 @@
-line 1:[programe:mot cle]
+1 :[P :erruer lexical !!]
+ line 1:[rograme: ident]
 line 1:[main: ident]
 line 2:[var:mot cle]
 line 2:[x: ident]
